@@ -27,9 +27,9 @@ import android.view.MotionEvent;
  *   						|
 	 MainActivity ---> onTouchEvent action:ACTION_DOWN //第7步
  *   						|
-	 MainActivity ---> dispatchTouchEvent action:ACTION_UP //第8步
+	 MainActivity ---> dispatchTouchEvent action:ACTION_UP 
  *   						|
-	 MainActivity ---> onTouchEvent action:ACTION_UP //第9步
+	 MainActivity ---> onTouchEvent action:ACTION_UP
  * 	
  * 1.1 单击 MyTextView并且有滑动手势
  * 
@@ -47,11 +47,11 @@ import android.view.MotionEvent;
  *   						|
  	MainActivity ---> onTouchEvent action:ACTION_DOWN //第7步
  *   						|
- 	MainActivity ---> dispatchTouchEvent action:ACTION_MOVE  //第8步
+ 	MainActivity ---> dispatchTouchEvent action:ACTION_MOVE 
  *   						|
- 	MainActivity ---> onTouchEvent action:ACTION_MOVE //第9步
+ 	MainActivity ---> onTouchEvent action:ACTION_MOVE 
  *   						|
- 	MainActivity ---> dispatchTouchEvent action:ACTION_MOVE //重复滑动
+ 	MainActivity ---> dispatchTouchEvent action:ACTION_MOVE 
  *   						|
 	MainActivity ---> onTouchEvent action:ACTION_MOVE
  *   						|
@@ -63,9 +63,9 @@ import android.view.MotionEvent;
  *   						|
 	MainActivity ---> onTouchEvent action:ACTION_MOVE
  *   						|
- 	MainActivity ---> dispatchTouchEvent action:ACTION_UP  //第10步
+ 	MainActivity ---> dispatchTouchEvent action:ACTION_UP 
  *   						|
- 	MainActivity ---> onTouchEvent action:ACTION_UP //第11步
+ 	MainActivity ---> onTouchEvent action:ACTION_UP 
  *
  *
  *2.MyTextView---onTouchEvent--->> return true;
@@ -80,15 +80,15 @@ import android.view.MotionEvent;
  *   						|
  	MyTextView ---> onTouchEvent action:ACTION_DOWN //第5步
  *   						|
- 	MainActivity ---> dispatchTouchEvent action:ACTION_UP //第6步
+ 	MainActivity ---> dispatchTouchEvent action:ACTION_UP 
  *   						|
- 	MyLinearLayout ---> dispatchTouchEvent action:ACTION_UP //第7步
+ 	MyLinearLayout ---> dispatchTouchEvent action:ACTION_UP 
  *   						|
- 	MyLinearLayout ---> onInterceptTouchEvent action:ACTION_UP //第8步
+ 	MyLinearLayout ---> onInterceptTouchEvent action:ACTION_UP 
  *   						|
- 	MyTextView ---> dispatchTouchEvent action:ACTION_UP //第9步
+ 	MyTextView ---> dispatchTouchEvent action:ACTION_UP 
  *   						|
- 	MyTextView ---> onTouchEvent action:ACTION_UP //第10步
+ 	MyTextView ---> onTouchEvent action:ACTION_UP 
  	
  *2.2 单击 MyTextView并且有滑动手势
  	MainActivity ---> dispatchTouchEvent action:ACTION_DOWN //第1步
@@ -101,17 +101,17 @@ import android.view.MotionEvent;
  *   						|
  	MyTextView ---> onTouchEvent action:ACTION_DOWN //第5步
  *   						|
- 	MainActivity ---> dispatchTouchEvent action:ACTION_MOVE //第6步
+ 	MainActivity ---> dispatchTouchEvent action:ACTION_MOVE 
  *   						|
- 	MyLinearLayout ---> dispatchTouchEvent action:ACTION_MOVE //第7步
+ 	MyLinearLayout ---> dispatchTouchEvent action:ACTION_MOVE 
  *   						|
- 	MyLinearLayout ---> onInterceptTouchEvent action:ACTION_MOVE //第8步
+ 	MyLinearLayout ---> onInterceptTouchEvent action:ACTION_MOVE 
  *   						|
- 	MyTextView ---> dispatchTouchEvent action:ACTION_MOVE //第9步
+ 	MyTextView ---> dispatchTouchEvent action:ACTION_MOVE 
  *   						|
- 	MyTextView ---> onTouchEvent action:ACTION_MOVE //第10步
+ 	MyTextView ---> onTouchEvent action:ACTION_MOVE 
  *   						|
- 	MainActivity ---> dispatchTouchEvent action:ACTION_MOVE //重复滑动
+ 	MainActivity ---> dispatchTouchEvent action:ACTION_MOVE 
  *   						|
  	MyLinearLayout ---> dispatchTouchEvent action:ACTION_MOVE
  *   						|
@@ -121,15 +121,15 @@ import android.view.MotionEvent;
  *   						|
  	MyTextView ---> onTouchEvent action:ACTION_MOVE
  *   						|
- 	MainActivity ---> dispatchTouchEvent action:ACTION_UP //第11步
+ 	MainActivity ---> dispatchTouchEvent action:ACTION_UP
  *   						|
- 	MyLinearLayout ---> dispatchTouchEvent action:ACTION_UP //第12步
+ 	MyLinearLayout ---> dispatchTouchEvent action:ACTION_UP 
  *   						|
- 	MyLinearLayout ---> onInterceptTouchEvent action:ACTION_UP //第13步
+ 	MyLinearLayout ---> onInterceptTouchEvent action:ACTION_UP 
  *   						|
- 	MyTextView ---> dispatchTouchEvent action:ACTION_UP //第14步
+ 	MyTextView ---> dispatchTouchEvent action:ACTION_UP 
  *   						|
- 	MyTextView ---> onTouchEvent action:ACTION_UP //第15步
+ 	MyTextView ---> onTouchEvent action:ACTION_UP 
  	
  *3.MyTextView---dispatchTouchEvent--->> return true; 
  

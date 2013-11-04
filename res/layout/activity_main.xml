@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.test.viewgroup.touch.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray"
+    android:gravity="center" >
+
+    <com.example.test.viewgroup.touch.MyTextView
+        android:id="@+id/testview"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:text="@string/hello_world"
+        android:background="@android:color/white"
+        android:textSize="50sp" />
+
+</com.example.test.viewgroup.touch.MyLinearLayout>
